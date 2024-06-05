@@ -4,8 +4,8 @@ CC = gcc
 	$(CC) $(CFLAGS) 0-main.c 0-binary_tree_node.c binary_tree_print.c -o 0
 1: 1-main.c binary_trees.h 1-binary_tree_insert_left.c binary_tree_print.c
 	$(CC) $(CFLAGS) 1-main.c 1-binary_tree_insert_left.c  binary_tree_print.c -o 1
-2: 2-main.c binary_trees.h 2-binary_tree_insert_right.c binary_tree_print.c
-	$(CC) $(CFLAGS) 2-main.c 2-binary_tree_insert_right.c binary_tree_print.c -o 2
+2: 2-main.c binary_trees.h 2-binary_tree_insert_right.c 0-binary_tree_node.c binary_tree_print.c
+	$(CC) $(CFLAGS) 2-main.c 2-binary_tree_insert_right.c binary_tree_print.c -o 0-binary_tree_node.c 2
 3: 3-main.c binary_trees.h 3-binary_tree_delete.c
 	$(CC) $(CFLAGS) 3-main.c 3-binary_tree_delete.c binary_tree_print.c -o 3
 4: 4-main.c binary_trees.h 4-binary_tree_is_leaf.c binary_tree_print.c
